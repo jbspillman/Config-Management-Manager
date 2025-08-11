@@ -1,0 +1,68 @@
+{
+    "patterns": [
+        {
+            "name": "Application File",
+            "pattern": "APP_FILE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 20000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "User File",
+            "pattern": "USER_FILE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 20000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Application Lite",
+            "pattern": "APP_LITE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 20000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Archive",
+            "pattern": "ARCHIVE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 20000,
+            "merge_strategy": "merge"
+        }
+    ]
+}

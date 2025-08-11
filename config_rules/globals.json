@@ -1,0 +1,44 @@
+{
+    "globals": [
+        {
+            "name": "Global_Baseline",
+            "conditions": {},
+            "priority": 50000,
+            "merge_strategy": "replace",
+            "configuration": {
+                "dns": {
+                    "servers": ["1.1.1.1", "2.2.2.2"],
+                    "suffixes": ["dns.a.com", "dns.b.com", "dns.c.com"],
+                    "timeout": "3",
+                    "setting_b": "",
+                    "setting_c": ""
+                },
+                "syslog": {
+                    "servers": ["syslog1:42345", "syslog2:42345"],
+                    "setting_a": "",
+                    "setting_b": "",
+                    "setting_c": "",
+                    "authentication": false
+                },
+                "snmp": {
+                    "servers": ["127.24.24.55", "110.24.24.56", "169.24.24.57"],
+                    "community": "fake_community",
+                    "authentication": false,
+                    "version": "2"
+                },
+                "ldap_msad": {
+                    "domain": "default.ad.domain.dns.com",
+                    "setting_a": "",
+                    "setting_b": "",
+                    "setting_c": ""
+                },
+                "ldap_unix": {
+                    "domain": "default.unix.ldap.name.com",
+                    "setting_a": "",
+                    "setting_b": "",
+                    "setting_c": ""
+                }
+            }
+        }
+    ]
+}

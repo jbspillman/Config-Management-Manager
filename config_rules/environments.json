@@ -1,0 +1,52 @@
+{
+    "environments": [
+        {
+            "name": "Production",
+            "environment": "PRD",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 25000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "UAT",
+            "environment": "UAT",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 25000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Development",
+            "environment": "DEV",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 25000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Lab",
+            "environment": "LAB",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 25000,
+            "merge_strategy": "merge"
+        }
+    ]
+}

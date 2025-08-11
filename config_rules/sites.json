@@ -1,0 +1,70 @@
+{
+    "sites": [
+        {
+            "name": "NAMR Business Entity 01",
+            "site": "NABE_01",
+            "status": "active",
+            "priority": 30000,
+            "conditions": {
+                "allowed_regions": [
+                    "NAMR"
+                ]
+            }
+        },
+        {
+            "name": "NAMR Business Entity 02",
+            "site": "NABE_02",
+            "status": "active",
+            "priority": 30000,
+            "conditions": {
+                "allowed_regions": [
+                    "NAMR"
+                ]
+            }
+        },
+        {
+            "name": "EMEA Business Entity 01",
+            "site": "EMEA_01",
+            "status": "active",
+            "priority": 30000,
+            "conditions": {
+                "allowed_regions": [
+                    "EMEA"
+                ]
+            }
+        },
+        {
+            "name": "EMEA Business Entity 02",
+            "site": "EMEA_02",
+            "status": "active",
+            "priority": 30000,
+            "conditions": {
+                "allowed_regions": [
+                    "EMEA"
+                ]
+            }
+        },
+        {
+            "name": "APAC Business Entity 01",
+            "site": "APBE_01",
+            "status": "active",
+            "priority": 30000,
+            "conditions": {
+                "allowed_regions": [
+                    "APAC"
+                ]
+            }
+        },
+        {
+            "name": "APAC Business Entity 02",
+            "site": "APBE_02",
+            "status": "active",
+            "priority": 30000,
+            "conditions": {
+                "allowed_regions": [
+                    "APAC"
+                ]
+            }
+        }
+    ]
+}

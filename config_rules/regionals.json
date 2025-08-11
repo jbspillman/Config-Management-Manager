@@ -1,0 +1,34 @@
+{
+    "regional": [
+        {
+            "name": "North America",
+            "region": "NAMR",
+            "conditions": {
+                "region": "NAMR"
+            },
+            "configuration": {},
+            "priority": 40000,
+            "status": "active"
+        },
+        {
+            "name": "Europe, Africa, Middle East",
+            "region": "EMEA",
+            "conditions": {
+                "region": "EMEA"
+            },
+            "configuration": {},
+            "priority": 40000,
+            "status": "active"
+        },
+        {
+            "name": "Asia Pacific",
+            "region": "APAC",
+            "conditions": {
+                "region": "APAC"
+            },
+            "configuration": {},
+            "priority": 40000,
+            "status": "active"
+        }
+    ]
+}

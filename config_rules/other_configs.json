@@ -1,0 +1,20 @@
+{
+    "other_configs": [
+        {
+            "name": "Something Else Special",
+            "pattern": "SPECIAL_001",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 100,
+            "merge_strategy": "merge"
+        }
+    ]
+}

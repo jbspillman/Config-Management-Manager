@@ -1,0 +1,52 @@
+{
+    "platforms": [
+        {
+            "name": "NetApp ONTAP",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "priority": 15000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Dell ONEFS",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "priority": 15000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Vast Data",
+            "platform": "VAST",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "priority": 15000,
+            "merge_strategy": "merge"
+        }
+    ]
+}

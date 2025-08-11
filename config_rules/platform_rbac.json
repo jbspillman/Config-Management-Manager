@@ -1,0 +1,79 @@
+{
+    "platform_rbac": [
+        {
+            "name": "NetApp ONTAP RBAC",
+            "platform_configurations": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": ["ONTAP"],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 14000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Dell ONEFS RBAC",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": ["ONEFS"],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 14000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Vast Data RBAC",
+            "platform": "VAST",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": ["VAST"],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 14000,
+            "merge_strategy": "merge"
+        }
+    ]
+}

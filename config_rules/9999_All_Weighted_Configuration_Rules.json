@@ -1,0 +1,1026 @@
+{
+    "globals": [
+        {
+            "name": "Global_Baseline",
+            "conditions": {},
+            "priority": 500,
+            "merge_strategy": "replace",
+            "configuration": {
+                "dns": {
+                    "servers": [
+                        "1.1.1.1",
+                        "2.2.2.2"
+                    ],
+                    "suffixes": [
+                        "dns.a.com",
+                        "dns.b.com",
+                        "dns.c.com"
+                    ],
+                    "timeout": "3",
+                    "setting_b": "",
+                    "setting_c": ""
+                },
+                "syslog": {
+                    "servers": [
+                        "syslog1:42345",
+                        "syslog2:42345"
+                    ],
+                    "setting_a": "",
+                    "setting_b": "",
+                    "setting_c": "",
+                    "authentication": false
+                },
+                "snmp": {
+                    "servers": [
+                        "127.24.24.55",
+                        "110.24.24.56",
+                        "169.24.24.57"
+                    ],
+                    "community": "fake_community",
+                    "authentication": false,
+                    "version": "2"
+                },
+                "ldap_msad": {
+                    "domain": "default.ad.domain.dns.com",
+                    "setting_a": "",
+                    "setting_b": "",
+                    "setting_c": ""
+                },
+                "ldap_unix": {
+                    "domain": "default.unix.ldap.name.com",
+                    "setting_a": "",
+                    "setting_b": "",
+                    "setting_c": ""
+                }
+            }
+        }
+    ],
+    "regional": [
+        {
+            "name": "North America",
+            "region": "NAMR",
+            "conditions": {
+                "region": "NAMR"
+            },
+            "configuration": {},
+            "priority": 1000,
+            "status": "active"
+        },
+        {
+            "name": "Europe, Africa, Middle East",
+            "region": "EMEA",
+            "conditions": {
+                "region": "EMEA"
+            },
+            "configuration": {},
+            "priority": 1000,
+            "status": "active"
+        },
+        {
+            "name": "Asia Pacific",
+            "region": "APAC",
+            "conditions": {
+                "region": "APAC"
+            },
+            "configuration": {},
+            "priority": 1000,
+            "status": "active"
+        }
+    ],
+    "sites": [
+        {
+            "name": "NAMR Business Entity 01",
+            "site": "NABE_01",
+            "status": "active",
+            "priority": 1500,
+            "conditions": {
+                "allowed_regions": [
+                    "NAMR"
+                ]
+            }
+        },
+        {
+            "name": "NAMR Business Entity 02",
+            "site": "NABE_02",
+            "status": "active",
+            "priority": 1500,
+            "conditions": {
+                "allowed_regions": [
+                    "NAMR"
+                ]
+            }
+        },
+        {
+            "name": "EMEA Business Entity 01",
+            "site": "EMEA_01",
+            "status": "active",
+            "priority": 1500,
+            "conditions": {
+                "allowed_regions": [
+                    "EMEA"
+                ]
+            }
+        },
+        {
+            "name": "EMEA Business Entity 02",
+            "site": "EMEA_02",
+            "status": "active",
+            "priority": 1500,
+            "conditions": {
+                "allowed_regions": [
+                    "EMEA"
+                ]
+            }
+        },
+        {
+            "name": "APAC Business Entity 01",
+            "site": "APBE_01",
+            "status": "active",
+            "priority": 1500,
+            "conditions": {
+                "allowed_regions": [
+                    "APAC"
+                ]
+            }
+        },
+        {
+            "name": "APAC Business Entity 02",
+            "site": "APBE_02",
+            "status": "active",
+            "priority": 1500,
+            "conditions": {
+                "allowed_regions": [
+                    "APAC"
+                ]
+            }
+        }
+    ],
+    "environments": [
+        {
+            "name": "Production",
+            "environment": "PRD",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 2000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "UAT",
+            "environment": "UAT",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 2000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Development",
+            "environment": "DEV",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 2000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Lab",
+            "environment": "LAB",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": []
+            },
+            "priority": 2000,
+            "merge_strategy": "merge"
+        }
+    ],
+    "patterns": [
+        {
+            "name": "Application File",
+            "pattern": "APP_FILE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 2500,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "User File",
+            "pattern": "USER_FILE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 2500,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Application Lite",
+            "pattern": "APP_LITE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 2500,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Archive",
+            "pattern": "ARCHIVE",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 2500,
+            "merge_strategy": "merge"
+        }
+    ],
+    "platforms": [
+        {
+            "name": "NetApp ONTAP",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "priority": 3000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Dell ONEFS",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "priority": 3000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Vast Data",
+            "platform": "VAST",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "priority": 3000,
+            "merge_strategy": "merge"
+        }
+    ],
+    "clusters": [
+        {
+            "name": "NetApp ONTAP",
+            "platform_configurations": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONTAP"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 3500,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Dell ONEFS",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONEFS"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 3500,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Vast Data",
+            "platform": "VAST",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "VAST"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 3500,
+            "merge_strategy": "merge"
+        }
+    ],
+    "namespaces": [
+        {
+            "name": "ONTAP SVM - {CLUSTER}",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - P",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - D",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [
+                    "PRD"
+                ],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - X",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - Z",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - S",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": false,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - R",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONTAP"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": false,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - H",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONTAP"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": false,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - K",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONTAP"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": false,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - I",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONTAP"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": false,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONTAP SVM - T",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONTAP"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": false,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONEFS ZONE - SYSTEM",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONEFS ZONE - EXECS",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [
+                    "USER_FILE"
+                ],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONEFS ZONE - HOME",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [
+                    "USER_FILE"
+                ],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONEFS ZONE - SHARED",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [
+                    "USER_FILE"
+                ],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONEFS ZONE - DBDUMP",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [
+                    "APP_LITE"
+                ],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONEFS ZONE - APPLITE",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [
+                    "APP_LITE"
+                ],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "ONEFS ZONE - BUNKER",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [
+                    "ARCHIVE"
+                ],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4000,
+            "enforced": true,
+            "merge_strategy": "merge"
+        }
+    ],
+    "storage_paths": [
+        {
+            "name": "Volumes",
+            "platform": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4500,
+            "enforced": false,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Paths",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 4500,
+            "enforced": false,
+            "merge_strategy": "merge"
+        }
+    ],
+    "platform_rbac": [
+        {
+            "name": "NetApp ONTAP RBAC",
+            "platform_configurations": "ONTAP",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONTAP"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 5000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Dell ONEFS RBAC",
+            "platform": "ONEFS",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "ONEFS"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 5000,
+            "merge_strategy": "merge"
+        },
+        {
+            "name": "Vast Data RBAC",
+            "platform": "VAST",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_patterns": [],
+                "prohibited_patterns": [],
+                "allowed_platforms": [
+                    "VAST"
+                ],
+                "prohibited_platforms": []
+            },
+            "configuration_settings": {
+                "cfg_item_01": [],
+                "cfg_item_02": [],
+                "cfg_item_03": [],
+                "cfg_item_04": [],
+                "cfg_item_05": []
+            },
+            "priority": 5000,
+            "merge_strategy": "merge"
+        }
+    ],
+    "other_configs": [
+        {
+            "name": "Something Else Special",
+            "pattern": "SPECIAL_001",
+            "conditions": {
+                "allowed_regions": [],
+                "prohibited_regions": [],
+                "allowed_sites": [],
+                "prohibited_sites": [],
+                "allowed_environments": [],
+                "prohibited_environments": [],
+                "allowed_platforms": [],
+                "prohibited_platforms": []
+            },
+            "priority": 5500,
+            "merge_strategy": "merge"
+        }
+    ]
+}
