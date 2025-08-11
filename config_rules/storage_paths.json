@@ -13,7 +13,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -37,7 +37,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],

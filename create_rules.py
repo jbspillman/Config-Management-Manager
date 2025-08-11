@@ -43,16 +43,20 @@ cfg_sites = os.path.join(script_folder, 'config_rules', 'sites.json')
 cfg_environments = os.path.join(script_folder, 'config_rules', 'environments.json')
 cfg_patterns = os.path.join(script_folder, 'config_rules', 'patterns.json')
 cfg_platforms = os.path.join(script_folder, 'config_rules', 'platforms.json')
-
 cfg_clusters = os.path.join(script_folder, 'config_rules', 'clusters.json')
 cfg_namespaces = os.path.join(script_folder, 'config_rules', 'namespaces.json')
 cfg_storage_paths = os.path.join(script_folder, 'config_rules', 'storage_paths.json')
-
 cfg_platform_rbac = os.path.join(script_folder, 'config_rules', 'platform_rbac.json')
 cfg_other_configs = os.path.join(script_folder, 'config_rules', 'other_configs.json')
 
 
-""" put these in the order of desired enforcement priority. """
+""" 
+Put these in the order of desired enforcement priority. 
+The higher in list equals order of application, so globals apply first then are layers upon by sub policies.
+* There are allowed and prohibited lists to allow inclusion or elimination of configurations. 
+* Prohibited will always win over the allowed of the same type? Perhaps this should be flipped...
+
+"""
 weighted_configuration_list = [
     {'id': 'globals', 'name': 'Global', 'description': 'Organization-wide baseline policies', 'file': f'{cfg_globals}'},
     {'id': 'regionals', 'name': 'Regional', 'description': 'Geographic region policies', 'file': f'{cfg_regionals}'},
@@ -92,16 +96,23 @@ def update_key_everywhere(the_data, target_key, new_value):
 print("Changing weights based on order and number of items in the list.")
 all_data = {}
 the_weight = 0
-weight_step = 500
+weight_step = 100
 for item in weighted_configuration_list:
+    file_path = item['file']
     the_weight += weight_step
-    with open(item['file'], 'r', encoding="utf-8") as file:
-        data = json.load(file)
+    print(f'Opening file for reading:  {file_path}')
+    with open(file_path, 'r', encoding="utf-8") as file:
+        try:
+            data = json.load(file)
+        except json.decoder.JSONDecodeError:
+            print(file_path, 'failed to open')
+            exit(1)
+
     update_key_everywhere(data, "priority", the_weight)
     all_data.update(data)
 p_all_data = json.dumps(all_data, indent=4)
-# print(p_all_data)
-cfg_combined =  os.path.join(script_folder, 'config_rules', '9999_All_Weighted_Configuration_Rules.json')
+
+cfg_combined =  os.path.join(script_folder, 'config_rules', 'All_Weighted_Configuration_Rules.json')
 with open(cfg_combined, 'w', encoding="utf-8") as f:
     f.write(p_all_data)
 

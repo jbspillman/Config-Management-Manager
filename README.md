@@ -21,10 +21,12 @@ Trying to create a configuration manager type of thing. </br>
      </br>
 6. #### Product Specific Policies (_diverge at this point_).
    * Product A, Product B, Product C
-     </br>
+     * _Perhaps we move to specific json files per product as this could get lengthy._
+       </br>
 7. #### RBAC (_Product Roll Based Access Controls_).
    * Security is largely based on Product, Use Case, Environment, etc.
-     </br>
+     * _Perhaps we move to specific json files per product as this could get lengthy._
+       </br>
 8. #### Cluster Configuration Rules
    * Cluster specific settings based on Product, etc.
      </br>

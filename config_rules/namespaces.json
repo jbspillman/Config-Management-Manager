@@ -13,7 +13,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -37,7 +37,7 @@
             "allowed_patterns": [],
             "prohibited_patterns": []
         },
-        "configuration_settings": {
+        "configuration": {
             "cfg_item_01": [],
             "cfg_item_02": [],
             "cfg_item_03": [],
@@ -61,7 +61,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -85,7 +85,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -109,7 +109,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -133,7 +133,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -159,7 +159,7 @@
                 "allowed_platforms": ["ONTAP"],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -185,7 +185,7 @@
                 "allowed_platforms": ["ONTAP"],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -211,7 +211,7 @@
                 "allowed_platforms": ["ONTAP"],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -237,7 +237,7 @@
                 "allowed_platforms": ["ONTAP"],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -263,7 +263,7 @@
                 "allowed_platforms": ["ONTAP"],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -287,7 +287,7 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -311,7 +311,7 @@
                 "allowed_patterns": ["USER_FILE"],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -335,7 +335,7 @@
                 "allowed_patterns": ["USER_FILE"],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -359,7 +359,7 @@
                 "allowed_patterns": ["USER_FILE"],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -383,7 +383,7 @@
                 "allowed_patterns": ["APP_LITE"],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -407,7 +407,7 @@
                 "allowed_patterns": ["APP_LITE"],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
@@ -431,7 +431,7 @@
                 "allowed_patterns": ["ARCHIVE"],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],

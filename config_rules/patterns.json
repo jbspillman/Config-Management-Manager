@@ -13,6 +13,7 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
+            "configuration": {},
             "priority": 20000,
             "merge_strategy": "merge"
         },
@@ -29,6 +30,7 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
+            "configuration": {},
             "priority": 20000,
             "merge_strategy": "merge"
         },
@@ -45,6 +47,7 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
+            "configuration": {},
             "priority": 20000,
             "merge_strategy": "merge"
         },
@@ -61,6 +64,7 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
+            "configuration": {},
             "priority": 20000,
             "merge_strategy": "merge"
         }

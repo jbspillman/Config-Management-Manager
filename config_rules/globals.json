@@ -1,7 +1,7 @@
 {
     "globals": [
         {
-            "name": "Global_Baseline",
+            "name": "Global Baseline",
             "conditions": {},
             "priority": 50000,
             "merge_strategy": "replace",

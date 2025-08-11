@@ -13,6 +13,7 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
+            "configuration": {},
             "priority": 100,
             "merge_strategy": "merge"
         }

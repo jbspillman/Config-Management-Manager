@@ -9,7 +9,8 @@
                 "allowed_regions": [
                     "NAMR"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "NAMR Business Entity 02",
@@ -20,7 +21,8 @@
                 "allowed_regions": [
                     "NAMR"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "EMEA Business Entity 01",
@@ -31,7 +33,8 @@
                 "allowed_regions": [
                     "EMEA"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "EMEA Business Entity 02",
@@ -42,7 +45,8 @@
                 "allowed_regions": [
                     "EMEA"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "APAC Business Entity 01",
@@ -53,7 +57,8 @@
                 "allowed_regions": [
                     "APAC"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "APAC Business Entity 02",
@@ -64,7 +69,8 @@
                 "allowed_regions": [
                     "APAC"
                 ]
-            }
+            },
+            "configuration": {}
         }
     ]
 }

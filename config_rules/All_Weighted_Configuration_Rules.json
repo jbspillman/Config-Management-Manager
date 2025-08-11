@@ -1,9 +1,9 @@
 {
     "globals": [
         {
-            "name": "Global_Baseline",
+            "name": "Global Baseline",
             "conditions": {},
-            "priority": 500,
+            "priority": 100,
             "merge_strategy": "replace",
             "configuration": {
                 "dns": {
@@ -55,7 +55,7 @@
             }
         }
     ],
-    "regional": [
+    "regionals": [
         {
             "name": "North America",
             "region": "NAMR",
@@ -63,7 +63,7 @@
                 "region": "NAMR"
             },
             "configuration": {},
-            "priority": 1000,
+            "priority": 200,
             "status": "active"
         },
         {
@@ -73,7 +73,7 @@
                 "region": "EMEA"
             },
             "configuration": {},
-            "priority": 1000,
+            "priority": 200,
             "status": "active"
         },
         {
@@ -83,7 +83,7 @@
                 "region": "APAC"
             },
             "configuration": {},
-            "priority": 1000,
+            "priority": 200,
             "status": "active"
         }
     ],
@@ -92,67 +92,73 @@
             "name": "NAMR Business Entity 01",
             "site": "NABE_01",
             "status": "active",
-            "priority": 1500,
+            "priority": 300,
             "conditions": {
                 "allowed_regions": [
                     "NAMR"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "NAMR Business Entity 02",
             "site": "NABE_02",
             "status": "active",
-            "priority": 1500,
+            "priority": 300,
             "conditions": {
                 "allowed_regions": [
                     "NAMR"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "EMEA Business Entity 01",
             "site": "EMEA_01",
             "status": "active",
-            "priority": 1500,
+            "priority": 300,
             "conditions": {
                 "allowed_regions": [
                     "EMEA"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "EMEA Business Entity 02",
             "site": "EMEA_02",
             "status": "active",
-            "priority": 1500,
+            "priority": 300,
             "conditions": {
                 "allowed_regions": [
                     "EMEA"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "APAC Business Entity 01",
             "site": "APBE_01",
             "status": "active",
-            "priority": 1500,
+            "priority": 300,
             "conditions": {
                 "allowed_regions": [
                     "APAC"
                 ]
-            }
+            },
+            "configuration": {}
         },
         {
             "name": "APAC Business Entity 02",
             "site": "APBE_02",
             "status": "active",
-            "priority": 1500,
+            "priority": 300,
             "conditions": {
                 "allowed_regions": [
                     "APAC"
                 ]
-            }
+            },
+            "configuration": {}
         }
     ],
     "environments": [
@@ -165,7 +171,8 @@
                 "allowed_sites": [],
                 "prohibited_sites": []
             },
-            "priority": 2000,
+            "configuration": {},
+            "priority": 400,
             "merge_strategy": "merge"
         },
         {
@@ -177,7 +184,8 @@
                 "allowed_sites": [],
                 "prohibited_sites": []
             },
-            "priority": 2000,
+            "configuration": {},
+            "priority": 400,
             "merge_strategy": "merge"
         },
         {
@@ -189,7 +197,8 @@
                 "allowed_sites": [],
                 "prohibited_sites": []
             },
-            "priority": 2000,
+            "configuration": {},
+            "priority": 400,
             "merge_strategy": "merge"
         },
         {
@@ -201,7 +210,8 @@
                 "allowed_sites": [],
                 "prohibited_sites": []
             },
-            "priority": 2000,
+            "configuration": {},
+            "priority": 400,
             "merge_strategy": "merge"
         }
     ],
@@ -219,7 +229,8 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
-            "priority": 2500,
+            "configuration": {},
+            "priority": 500,
             "merge_strategy": "merge"
         },
         {
@@ -235,7 +246,8 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
-            "priority": 2500,
+            "configuration": {},
+            "priority": 500,
             "merge_strategy": "merge"
         },
         {
@@ -251,7 +263,8 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
-            "priority": 2500,
+            "configuration": {},
+            "priority": 500,
             "merge_strategy": "merge"
         },
         {
@@ -267,7 +280,8 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
-            "priority": 2500,
+            "configuration": {},
+            "priority": 500,
             "merge_strategy": "merge"
         }
     ],
@@ -285,7 +299,8 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "priority": 3000,
+            "configuration": {},
+            "priority": 600,
             "merge_strategy": "merge"
         },
         {
@@ -301,7 +316,8 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "priority": 3000,
+            "configuration": {},
+            "priority": 600,
             "merge_strategy": "merge"
         },
         {
@@ -317,7 +333,8 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "priority": 3000,
+            "configuration": {},
+            "priority": 600,
             "merge_strategy": "merge"
         }
     ],
@@ -339,14 +356,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 3500,
+            "priority": 700,
             "merge_strategy": "merge"
         },
         {
@@ -366,14 +383,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 3500,
+            "priority": 700,
             "merge_strategy": "merge"
         },
         {
@@ -393,14 +410,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 3500,
+            "priority": 700,
             "merge_strategy": "merge"
         }
     ],
@@ -418,14 +435,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -442,14 +459,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -468,14 +485,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -492,14 +509,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -516,14 +533,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -540,14 +557,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": false,
             "merge_strategy": "merge"
         },
@@ -568,14 +585,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": false,
             "merge_strategy": "merge"
         },
@@ -596,14 +613,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": false,
             "merge_strategy": "merge"
         },
@@ -624,14 +641,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": false,
             "merge_strategy": "merge"
         },
@@ -652,14 +669,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": false,
             "merge_strategy": "merge"
         },
@@ -680,14 +697,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": false,
             "merge_strategy": "merge"
         },
@@ -704,14 +721,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -730,14 +747,14 @@
                 ],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -756,14 +773,14 @@
                 ],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -782,14 +799,14 @@
                 ],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -808,14 +825,14 @@
                 ],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -834,14 +851,14 @@
                 ],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         },
@@ -860,14 +877,14 @@
                 ],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4000,
+            "priority": 800,
             "enforced": true,
             "merge_strategy": "merge"
         }
@@ -886,14 +903,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4500,
+            "priority": 900,
             "enforced": false,
             "merge_strategy": "merge"
         },
@@ -910,14 +927,14 @@
                 "allowed_patterns": [],
                 "prohibited_patterns": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 4500,
+            "priority": 900,
             "enforced": false,
             "merge_strategy": "merge"
         }
@@ -940,14 +957,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 5000,
+            "priority": 1000,
             "merge_strategy": "merge"
         },
         {
@@ -967,14 +984,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 5000,
+            "priority": 1000,
             "merge_strategy": "merge"
         },
         {
@@ -994,14 +1011,14 @@
                 ],
                 "prohibited_platforms": []
             },
-            "configuration_settings": {
+            "configuration": {
                 "cfg_item_01": [],
                 "cfg_item_02": [],
                 "cfg_item_03": [],
                 "cfg_item_04": [],
                 "cfg_item_05": []
             },
-            "priority": 5000,
+            "priority": 1000,
             "merge_strategy": "merge"
         }
     ],
@@ -1019,7 +1036,8 @@
                 "allowed_platforms": [],
                 "prohibited_platforms": []
             },
-            "priority": 5500,
+            "configuration": {},
+            "priority": 1100,
             "merge_strategy": "merge"
         }
     ]
